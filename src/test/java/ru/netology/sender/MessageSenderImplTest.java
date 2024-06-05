@@ -44,7 +44,6 @@ class MessageSenderImplTest {
     }
 
     public static Stream<Arguments> sendTestParams() {
-        Map<String, String> headers = new HashMap<>();
         return Stream.of(
                 arguments("172.123.12.19", new Location("Moscow", Country.RUSSIA, "Lenina", 15)),
                 arguments("96.44.183.149", new Location("New York", Country.USA, " 10th Avenue", 32)),
